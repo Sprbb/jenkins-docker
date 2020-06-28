@@ -8,7 +8,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone &
  rm -rf /tmp/download/docker/dockerd && \
  mv /tmp/download/docker/docker* /usr/local/bin/ && \
  rm -rf /tmp/download && \
- groupadd -g 997 docker && \
+ groupadd -g 0 docker && \
  usermod -aG staff,docker jenkins
 
 user jenkins
